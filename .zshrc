@@ -125,10 +125,8 @@ export VISUAL="/usr/bin/nvim"
 export EDITOR="/usr/bin/nvim"
 
 alias ll='ls -lA'
-alias vim=nvim
+alias vim='nvim'
 alias reloadcli='source $HOME/.zshrc'
-
-
 
 
 source <(fzf --zsh)
