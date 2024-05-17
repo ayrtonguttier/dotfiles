@@ -110,7 +110,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:.bin/nvim/bin/"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/opt/node/bin"
 export PATH="$PATH:/opt/goland/bin"
@@ -126,7 +126,10 @@ export EDITOR="/usr/bin/nvim"
 
 alias ll='ls -lA'
 alias vim=nvim
+alias reloadcli='source $HOME/.zshrc'
 
 
-eval "$(fzf --zsh)"
+
+
+source <(fzf --zsh)
 eval "$(zoxide init zsh --cmd cd)"
