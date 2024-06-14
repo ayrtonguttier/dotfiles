@@ -18,6 +18,8 @@ RUN curl https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.4/zoxide-0
 
 WORKDIR /root
 RUN git clone https://github.com/ayrtonguttier/dotfiles.git --branch docker
+
 WORKDIR /root/dotfiles
 RUN stow zsh
+
 ENTRYPOINT [ "zsh" ]
