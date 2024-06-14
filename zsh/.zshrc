@@ -129,5 +129,5 @@ alias vim='nvim'
 alias reloadcli='source $HOME/.zshrc'
 
 
-source <(fzf --zsh)
-eval "$(zoxide init zsh --cmd cd)"
+source <(/opt/fzf/fzf --zsh)
+eval "$(/opt/zoxide/zoxide init zsh --cmd cd)"
