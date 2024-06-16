@@ -12,5 +12,6 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 
 vim.keymap.set('n', '<leader><tab>', vim.cmd.bn)
 vim.keymap.set('n', '<leader><S-tab>', vim.cmd.bN)
-vim.keymap.set('n', '<leader>q', vim.cmd.bd)
-vim.keymap.set('n', '<C-c>', '<esc>')
+vim.keymap.set('n', '<leader>q', function()
+    vim.cmd "bd!"
+end)
