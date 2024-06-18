@@ -71,11 +71,10 @@ ZSH_THEME="clean"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    git 
+    dotenv
     docker
     golang
     gitignore
-    tmux
     extract
     virtualenv
     zsh-autosuggestions
@@ -110,22 +109,27 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$PATH:.bin/nvim/bin/"
+export PATH="$PATH:/usr/bin/nvim"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/opt/node/bin"
 export PATH="$PATH:/opt/goland/bin"
 export PATH="$PATH:$HOME/.bin/fzf"
 export PATH="$PATH:$HOME/.bin/zoxide"
+export PATH="$PATH:$(go env GOPATH)/bin"
+export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:/opt/direnv"
 
 export GOROOT="/usr/local/go"
 
 export FZF_DEFAULT_COMMAND="fdfind"
 
-export VISUAL="/usr/bin/nvim"
-export EDITOR="/usr/bin/nvim"
+export VISUAL="nvim"
+export EDITOR="nvim"
 
 alias ll='ls -lA'
 alias vim='nvim'
+alias v='nvim .'
+alias vp='nvim $HOME/.config/nvim'
 alias reloadcli='source $HOME/.zshrc'
 
 
