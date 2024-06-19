@@ -109,15 +109,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$PATH:/usr/bin/nvim"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/opt/node/bin"
-export PATH="$PATH:/opt/goland/bin"
-export PATH="$PATH:$HOME/.bin/fzf"
-export PATH="$PATH:$HOME/.bin/zoxide"
+export PATH="$PATH:/opt/fzf"
 export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/opt/direnv"
+export PATH="$PATH:/opt/node-v20.14.0-linux-x64/bin"
 
 export GOROOT="/usr/local/go"
 
