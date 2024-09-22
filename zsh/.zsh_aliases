@@ -1,0 +1,11 @@
+alias ll='ls -lA'
+alias vim='nvim'
+alias v='nvim .'
+alias vp='nvim $HOME/.config/nvim'
+alias reloadcli='source $HOME/.zshrc'
+
+
+# tmux
+
+alias t='tmux -L $(basename $(pwd))'
+alias ta='tmux -L "$(basename $(pwd))" attach'

@@ -131,12 +131,7 @@ export FZF_DEFAULT_COMMAND="fdfind"
 export VISUAL="nvim"
 export EDITOR="nvim"
 
-alias ll='ls -lA'
-alias vim='nvim'
-alias v='nvim .'
-alias vp='nvim $HOME/.config/nvim'
-alias reloadcli='source $HOME/.zshrc'
-
-
 source <(fzf --zsh)
 eval "$(zoxide init zsh --cmd cd)"
+
+source "$HOME/.zsh_aliases"
