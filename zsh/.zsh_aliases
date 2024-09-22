@@ -6,6 +6,5 @@ alias reloadcli='source $HOME/.zshrc'
 
 
 # tmux
-
 alias t='tmux -L $(basename $(pwd))'
 alias ta='tmux -L "$(basename $(pwd))" attach'
