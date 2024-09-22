@@ -21,14 +21,10 @@ return {
             require('mason').setup()
             require('mason-lspconfig').setup({
                 ensure_installed = {
-                    'gopls',
                     'lua_ls',
-                    'eslint',
-                    'tsserver',
-                    'pyright',
                 },
                 handlers = {
-                    lsp_zero.default_setup
+                    lsp_zero.default_setup,
                 }
             })
 
