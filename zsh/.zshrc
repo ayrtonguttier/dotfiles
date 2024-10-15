@@ -72,7 +72,7 @@ ZSH_THEME="clean"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     dotenv
-    docker
+    #docker
     golang
     gitignore
     extract
@@ -110,9 +110,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export JAVA_HOME="/opt/jdk-22.0.2/"
-export PATH="$PATH:/opt/go/bin"
+export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/opt/node/bin"
-export PATH="$PATH:/opt/fzf"
+export PATH="$PATH:$HOME/.bin/fzf"
+export PATH="$PATH:$HOME/.bin/zoxide"
 export PATH="$PATH:/home/ayrtonguttier/.local/bin"
 export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$PATH:/opt/nvim-linux64/bin"
@@ -121,10 +122,11 @@ export PATH="$PATH:/opt/node-v20.14.0-linux-x64/bin"
 export PATH="$PATH:/opt/jdk-22.0.2/bin"
 export PATH="$PATH:/opt/apache-maven-3.9.9/bin"
 export PATH="$PATH:/opt/idea-IC-242.20224.387/bin"
+export PATH="$PATH:/mnt/c/Program Files/Docker/Docker/resources/bin"
+export PATH="$PATH:/home/ayrtonguttier/.bin/php"
 
 
-
-export GOROOT="/opt/go"
+export GOROOT="/usr/local/go"
 
 export FZF_DEFAULT_COMMAND="fdfind"
 
@@ -134,4 +136,6 @@ export EDITOR="nvim"
 source <(fzf --zsh)
 eval "$(zoxide init zsh --cmd cd)"
 
+
 source "$HOME/.zsh_aliases"
+source "$HOME/.zsh_bindings"

@@ -51,6 +51,12 @@ return {
                     ['<C-d>'] = cmp.mapping.scroll_docs(4),
                 }),
             })
+
+            require('lspconfig').emmet_language_server.setup({
+                filetypes = {"php"}
+            })
+
+
         end
     },
 }
