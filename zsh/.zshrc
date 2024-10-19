@@ -116,3 +116,4 @@ source <(fzf --zsh)
 eval "$(zoxide init zsh --cmd cd)"
 
 source "$HOME/.zsh_aliases"
+source "$HOME/.zsh_bind"
