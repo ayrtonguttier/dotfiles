@@ -109,27 +109,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export JAVA_HOME="/opt/jdk-22.0.2/"
-export PATH="$PATH:/opt/go/bin"
-export PATH="$PATH:/opt/node/bin"
-export PATH="$PATH:/opt/fzf"
-export PATH="$PATH:/home/ayrtonguttier/.local/bin"
-export PATH="$PATH:$(go env GOPATH)/bin"
-export PATH="$PATH:/opt/nvim-linux64/bin"
-export PATH="$PATH:/opt/direnv"
-export PATH="$PATH:/opt/node-v20.14.0-linux-x64/bin"
-export PATH="$PATH:/opt/jdk-22.0.2/bin"
-export PATH="$PATH:/opt/apache-maven-3.9.9/bin"
-export PATH="$PATH:/opt/idea-IC-242.20224.387/bin"
-
-
-
-export GOROOT="/opt/go"
-
-export FZF_DEFAULT_COMMAND="fdfind"
-
-export VISUAL="nvim"
-export EDITOR="nvim"
+#export VISUAL="nvim"
+#export EDITOR="nvim"
 
 source <(fzf --zsh)
 eval "$(zoxide init zsh --cmd cd)"
