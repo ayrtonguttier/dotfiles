@@ -1,5 +1,9 @@
-import = [ "./alacritty-master/dracula.toml" ]
-shell =  { program = "/usr/bin/zsh" } 
 
 [font]
 normal = { family = "CommitMono Nerd Font Mono" }
+
+[general]
+import = [ "./alacritty-master/dracula.toml" ]
+
+[terminal]
+shell =  { program = "/usr/bin/zsh" } 
