@@ -1,3 +1,4 @@
 alias ll='ls -lA'
 alias vp='nvim $HOME/.config/nvim'
 alias reloadcli='source $HOME/.zshrc'
+alias clip='xclip -selection "clipboard"'

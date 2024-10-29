@@ -113,7 +113,7 @@ source $ZSH/oh-my-zsh.sh
 #export EDITOR="nvim"
 
 source <(fzf --zsh)
-eval "$(zoxide init zsh --cmd cd)"
+# eval "$(zoxide init zsh --cmd cd)"
 
 source "$HOME/.zsh_aliases"
 source "$HOME/.zsh_bind"
