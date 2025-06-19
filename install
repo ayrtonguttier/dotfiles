@@ -1,0 +1,16 @@
+#!/bin/bash
+if [[ -z $SUDO_USER ]]; then
+    echo "run as sudo"
+    exit 1
+fi
+
+apt update && apt install git build-essential stow zsh tmux
+
+# ZSH
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" 2> /dev/null
+stow --adopt zsh
+git restore zsh
+
+# TMUX
+stow tmux
+
