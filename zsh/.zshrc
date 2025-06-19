@@ -110,7 +110,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #export VISUAL="nvim"
-#export EDITOR="nvim"
+export EDITOR="nvim"
 
 source <(fzf --zsh)
 # eval "$(zoxide init zsh --cmd cd)"
