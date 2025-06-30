@@ -72,13 +72,13 @@ ZSH_THEME="clean"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     dotenv
-    docker
-    golang
-    gitignore
+    #docker
+    #golang
+    #gitignore
     extract
-    virtualenv
-    zsh-autosuggestions
-    zsh-syntax-highlighting
+    #virtualenv
+    #zsh-autosuggestions
+    #zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -112,7 +112,7 @@ source $ZSH/oh-my-zsh.sh
 #export VISUAL="nvim"
 export EDITOR="nvim"
 
-source <(fzf --zsh)
+# source <(fzf --zsh)
 # eval "$(zoxide init zsh --cmd cd)"
 
 source "$HOME/.zsh_aliases"
