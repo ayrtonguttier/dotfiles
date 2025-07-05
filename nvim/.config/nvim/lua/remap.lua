@@ -14,3 +14,5 @@ vim.keymap.set('n', '<leader><S-tab>', vim.cmd.bN)
 vim.keymap.set('n', '<leader>q', function()
     vim.cmd "bd!"
 end)
+
+vim.keymap.set('i', '<C-c>', '<Esc>')
