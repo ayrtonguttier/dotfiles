@@ -1,6 +1,5 @@
-
 [font]
-normal = { family = "CommitMono Nerd Font Mono" }
+normal = { family = "JetBrains Mono" }
 
 [general]
 import = [ "./alacritty-master/dracula.toml" ]
