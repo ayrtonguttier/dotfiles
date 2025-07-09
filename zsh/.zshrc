@@ -112,6 +112,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$PATH:."
 export VISUAL="nvim"
 export EDITOR="nvim"
+export QT_QPA_PLATFORM="wayland"
 
 source <(fzf --zsh)
 # eval "$(zoxide init zsh --cmd cd)"
