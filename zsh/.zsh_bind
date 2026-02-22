@@ -1,3 +1,2 @@
 #!/usr/bin/zsh
-
-bindkey -s ^f "~/dotfiles/tmux/sessionizer\n"
+bindkey -s '^f'  '~/.local/bin/sessionizer\n'

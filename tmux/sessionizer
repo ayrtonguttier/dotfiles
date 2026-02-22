@@ -1,9 +1,9 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-	selected=$(find ~/.config ~/workspace ~/dotfiles -mindepth 0 -maxdepth 1 -type d | fzf)
+    selected=$(find ~/workspace ~/.dotfiles -mindepth 0 -maxdepth 1 -type d | fzf)
 fi
 
 if [[ -z $selected ]]; then
