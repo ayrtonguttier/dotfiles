@@ -1,2 +1,0 @@
-#!/usr/bin/zsh
-bindkey -s '^f'  '~/.local/bin/sessionizer\n'
