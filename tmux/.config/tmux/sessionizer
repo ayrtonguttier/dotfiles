@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
+preview_cmd='readme=$(find -L {} -maxdepth 1 -iname "README*" -type f | head -n1); if [[ -n "$readme" ]]; then bat --style=plain --color=always --language=markdown "$readme"; else echo "{}"; fi'
+
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~/projects ~/personal  -mindepth 0 -maxdepth 1 -type d | fzf)
+    selected=$(find ~/projects ~/personal  -mindepth 1 -maxdepth 1 -type d | fzf --preview "$preview_cmd")
 fi
 
 if [[ -z $selected ]]; then
